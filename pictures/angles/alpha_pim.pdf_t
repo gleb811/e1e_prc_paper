@@ -1,0 +1,35 @@
+\begin{picture}(0,0)%
+\includegraphics{alpha_pim.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(14715,7831)(-2081,-6934)
+\put(5401,-2896){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\pi^{+}$}}}%
+}}}}
+\put(7471,-3416){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$p$}}}%
+}}}}
+\put(4131,-2931){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$p'$}}}%
+}}}}
+\put(8461,-4786){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\vec\beta$}}}%
+}}}}
+\put(5551,-4741){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\pi^{-}$}}}%
+}}}}
+\put(7516,-4876){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\vec\delta$}}}%
+}}}}
+\put(7066,-5666){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\vec\gamma$}}}%
+}}}}
+\put(8596,-5776){\makebox(0,0)[lb]{\smash{{\SetFigFont{34}{40.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\alpha_{\pi^{-}}$}}}%
+}}}}
+\put(2431,-5056){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$e'$}}}%
+}}}}
+\put(4771,-4246){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$\gamma$}}}%
+}}}}
+\put(2251,-2221){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\bfdefault}{\updefault}{\color[rgb]{0,0,0}\scalebox{1.8}{\boldmath{$e$}}}%
+}}}}
+\end{picture}%

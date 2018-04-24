@@ -1,0 +1,916 @@
+
+\RequirePackage{lineno} 
+\documentclass[,superscriptaddress,showpacs,amssymb,amsmath,amsfonts,linenumbers,article]{revtex4-1}
+%\documentclass[prc,preprint,superscriptaddress,showpacs,amssymb,amsmath,amsfonts,aps]{revtex4}
+%\setlength{\topmargin}{-1.0cm}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{-1}} 
+%\usepackage{epsfig}
+\usepackage{latexsym}
+\usepackage{amsmath} 
+\usepackage{url}
+\usepackage{natbib}
+
+\usepackage{mathtools}
+\usepackage{framed}
+\usepackage{diagbox}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{float}
+%\restylefloat{table}
+\usepackage[margin=20mm]{geometry}
+\usepackage{enumerate}
+
+
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+
+%\usepackage[dvips]{color}
+
+%\newcommand{\Dfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+%\newcommand{\F}[1]{Figure~\ref{#1}}
+\pagenumbering{arabic}
+\pdfminorversion=5 
+\pdfcompresslevel=9
+\pdfobjcompresslevel=9
+
+%
+\begin{document}
+
+\begin{center}
+\vspace{2cm}
+{\Large ANSWERS TO THE COMMENTS OBTAINED FROM COLLABORATION MEMEBERS ON}\\[0.7cm]  
+
+{\bf \large
+Measurements of $\gamma_{v} p \rightarrow p' \pi^{+} \pi^{-}$ cross section with the CLAS detector for 0.4 GeV$^2 < Q^2 < 1.0$ GeV$^2$ and 1.3 GeV $< W <$ 1.825 GeV \\[0.7cm]}
+
+by G.V. Fedotov, Iu. Skorodumina, V.D. Burkert, R.W. Gothe, K. Hicks, V.I. Mokeev,\\ and CLAS Collaboration\\[1cm]
+\end{center}
+
+We would like to thank all the Collaboration members, who have sent their comments, thus helping us to improve the paper significantly. The answers to the comments are given below.\\
+
+
+{\vspace{1cm} \bf \Large \underline{Comments by D. Carman}}\\[0.5cm]
+
+
+General:\\[0.5cm]
+
+- Figs. 3, 4, 6, 8, 9, 10, 13, 15: I think that you make the presentation less complete when you present these 2D figures in B\&W. I strongly recommend that you replace these figures with color versions..\\
+{\bf We have tested both options and found that B\&W style looks better indeed.}\\[`.5cm]
+
+\begin{itemize}
+\item {\bf \large Page 1:}
+\begin{enumerate} 
+
+\item Title: Use "Measurements of the ...". \\
+{\bf Done.}
+\item Note: Throughout the paper you use "\$ \textbackslash gamma\_\{\textbackslash rm v\} \$". This really should   be "\$ \textbackslash gamma\_v \$".\\
+{\bf We introduced text letters instead of italic for those indices that correspond to text scripts according to the comment by Whit Armstrong received at the first round of the Ad Hoc review.}
+\item Abstract: Line 4. Use "... final hadronic system ...". \\
+{\bf Done.}
+\item Abstract: Line 6. Use "... experiments to date.". \\
+{\bf Done.}
+\item Abstract: Line 9.  Use "The data offer promising prospects to improve knowledge on ...". \\
+{\bf Done.}
+\item Line 12. Use "During the last several decades, ...". \\
+{\bf Done.}
+\item Line 19. Use "...  of the extracted observables ...". \\
+{\bf Done.}
+\item Line 31. Use "...  new data for the full integrated ...".\\
+{\bf We don't see any particular difference and prefer our version.}
+\item Line 37. "They are also available on GitHub [3]." I do not think that it is appropriate  to cite data on a private github repository for CLAS. The CLAS physicsdb is   sufficient and appropriate. I recommend to remove this reference.\\
+{\bf We found that to obtain the whole set of the cross sections from the CLAS Physics Database, a user needs to download hundreds of files manually (it means to push hundreds of buttons and spend a lot of time). We provide the github link as a complementary to the main source (CLAS db) for the convenience of those users, who need a quick access to the whole dataset. Additionally, we have already sent the data to Vitaly Chesnokov and hope he will soon upload them to the CLAS db.}
+\item Line 39. Use "... in $W$), as well ...". \\
+{\bf Done.}
+\item Line 40. Use "...  statistical uncertainties than were achieved ...". \\
+{\bf Done.}
+\item Line 41. Use "...  cross sections [4-6].". \\
+{\bf Done.}
+\item Line 58. Use "...  range, direct comparisons with these data are not straightforward   and are not shown here."\\
+{\bf Done.}
+\item Line 66. Use "...  above the $\Delta(1232)$.". \\
+{\bf Done.}
+\item Line 71. Use "...  $Q^2$ binning, which is valuable ...". \\
+{\bf Done.}
+\item Line 74. Use "The most common way ...". \\
+{\bf Done.}
+\end{enumerate}
+
+\item {\bf \large  Page 2:}
+
+\begin{enumerate} 
+\item Line 78. Use "This model, which aims at ...". \\
+{\bf Done.}
+\item Line 87. Use "... on the kinematic region), which is a very promising ...". \\
+{\bf Done.}
+\item Line 88. Use "... of the resonant ...". \\
+{\bf Done.}
+\item Line 91. Use "... within the JM model, ...". \\
+{\bf Done.}
+\item Line 97. Use "... were acquired at JLab in Hall~B ...". \\
+{\bf Done.}
+\item Line 99. Use "... [1], which consisted ...". \\
+{\bf Done.}
+\item Line 101. Use "... Drift Chambers (DC), a \{\textbackslash v C\textbar herenkov\} ...". \\
+{\bf Done.}
+\item Line 102. Use "... a Time-of-Flight ... and a sampling ...". \\
+{\bf Done.}
+\item Line 105. Use "... allowed for the determination of their momenta  in the DC.". \\
+{\bf Done.}
+\item Line 109. Use "... period that lasted from ...". \\
+{\bf Done.}
+\item Line 112. Use consistent significant figures on beam energies.\\
+{\bf We are not able to find the precise value for the part of the run with about 1 GeV beam energy. However, we prefer to keep all significant digits in "2.039"~GeV, since even 1~MeV is essential for some analysis procedures such as momentum corrections. So, we left it as is.}
+\item Fig. 1 caption. Use "... during the CLAS "e1e" run period.". \\
+{\bf Done.}
+\item Line 118. Use "... along the $z$-axis (near the center of CLAS), and ...". \\
+{\bf Done.}
+\item Line 123. Use "The target cell had 15-$\mu$m-thick aluminum entrance and exit windows. In addition, an aluminum foil was located 2.0~cm downstream of the target center.". \\
+{\bf Done.}
+\item Line 128. Use "... and served for both the estimation ... of events that originated ...". \\
+{\bf Done.}
+\item Line 132. Use "... included runs with the target cell ...". \\
+{\bf Done.}
+\item Line 140. Use "Both distributions are normalized to ...". \\
+{\bf Done.}
+\end{enumerate}
+
+\item {\bf \large  Page 3:}
+
+\begin{enumerate} 
+\item Line 147. Use "... target runs shows two peaks that correspond ...".\\
+{\bf We like our version better.}
+\item Line 150. Use "... a cut on the $z$-coordinate of the electron ...". \\
+{\bf Done.}
+\item Line 151. Use "... by the two vertical ...". \\
+{\bf Done.}
+\item Line 167. Use "... responses were analyzed.". \\
+{\bf Done.}
+\item Line 168. Do not begin a new paragraph with this sentence.\\
+{\bf We think that the sentence is good.}
+\item Line 176. Use "In the next step, a so-called sampling fraction ...".\\
+{\bf Done.}
+\item Line 184. Use "... of $P_{e'}$ should be nearly a fixed constant. This constant is roughly 1/3, since by the EC design ...". \\
+{\bf We don't see any particular difference and prefer our version.}
+\item Line 195. Use "... while the other two curves ...". \\
+{\bf Done.}
+\item Line 196. Use "... cut that was determined ...". \\
+{\bf Done.}
+\item Line 198. Use "... for the experimental data ...". \\
+{\bf Done.}
+\item Line 208. Use "As was shown ...". \\
+{\bf Done.}
+\item Line 210. Use "... photoelectrons (the so-called ...". \\
+{\bf Done.}
+\item Fig. 4 caption. Last line. Use "... that was applied ...". \\
+{\bf Done.}
+
+\end{enumerate}
+
+
+\item {\bf \large  Page 4:}
+
+\begin{enumerate} 
+
+\item Left column: Line 2. Use "... photoelectrons, shifted the measured CC spectrum toward zero ...". \\
+{\bf Done.}
+\item Left column: Line 5. Use "... buy a more pronounced ...". \\
+{\bf Done.}
+\item Line 214. Use "... denominator corresponds to the ...". \\
+{\bf Done.}
+\item Line 223. Use "... As is seen in Fig. 4, ...".\\
+{\bf We like our version better.}
+\item Line 225. Use "... sector (shown in white).". \\
+{\bf Done.}
+\item Line 230. Use "... originated from the black ...". \\
+{\bf Done.}
+\item Line 233. Use "... signals from the inefficient ...".\\
+{\bf Done.}
+\item Line 235. Use "... as shown in Fig.~5. This peak in the photoelectron ...". \\
+{\bf Done.}
+\item Line 244. Use "... by the function:
+     \begin{equation}
+       y = ...   ,
+     \end{equation}
+    which is a slightly modified Poisson distribution where ...".\\
+ {\bf  We like our version better since it explains things more consistent.}
+\item Line 250. Use "Finally, the correction factors defined as:
+    \begin{equation}
+     F_{ph. el.} = ... ,
+    \end{equation}
+    were applied as a weight for each event that corresponded to the particular PMT."\\
+ {\bf  We like our version better since it explains things more consistent.}
+\item Line 253. Do not begin a new paragraph with this sentence.\\
+{\bf The sentence looks good for us.}
+\item Line 257. Use "... for a charged particle track, ...".\\
+{The TOF system is able to provide timing information for neutral particles, too. So, we prefer to keep our version.}
+\item Line 258. Use "... candidate was calculated.".\\
+{\bf Done.}
+\item Line 262. Use "... given by:".\\
+{\bf Done.}
+\item Eq.(4) should end with a comma not a period.\\
+{\bf Done.}
+\item Line 271. Use "... is given for scintillator 34 of CLAS sector 1.".\\
+{\bf Done.}
+\end{enumerate}
+
+\item {\bf \large  Page 5:}
+
+\begin{enumerate} 
+
+\item Line 287. Use "... bands in the experimental ...".\\
+{\bf Done.}
+\item Line 294. Use "... the reconstructed momentum and ...".\\
+{\bf we changed to "... the measured momentum and ..." in order to avoid the confusion with the "Monte  Carlo reconstructed".}
+\item Line 296. Use "... effects were of ...".\\
+{\bf Done.}
+\item Line 297. Use "... they could not be simulated ...".\\
+{\bf Done.}
+\item Line 298. Use "... procedure was needed ...".\\
+{\bf Done.}
+\item Line 302. Use "It was shown ... position was shifted from the proton mass value and this shift depended on the CLAS sector."\\
+{\bf The suggestion changes the meaning of the sentence. In the Ref.[14] (in the old paper version) the general statement, which is not based on the analyzed dataset, is given. So, we keep our version.}
+\item Line 306. Use "... effect depended on the ...".\\
+{\bf Kept as is for the reason described above.} 
+\item Line 308. Use "... 2.039~GeV, there was a small shift ...".\\
+{\bf We do not see any particular difference, so our version was kept.}
+\item Line 309. Use "... peak position, while Ref. [14] ...".\\
+{\bf See the answer to the previous comment.}
+\item Line 319. Use "... momenta could be neglected.".\\
+{\bf We prefer to keep our version.}
+\item Line 323. Use "... correction, as well as an ...".\\
+{\bf Done.}
+\item Line 332. Use "... due to their interaction ...".\\
+{\bf Done.}
+\item Line 336. Use "... and, therefore, the effect ...".\\
+{\bf Done.}
+\item Line 339. Use "... shifts in the distributions ...".\\
+{\bf Done.}
+\item Line 342. Use "... low-energy protons ...".\\
+{\bf Done.}
+
+\end{enumerate}
+
+
+\item {\bf \large  Page 6:}
+
+\begin{enumerate} 
+
+\item Line 343. Use "... loss in the materials.".\\
+{\bf Done.}
+\item Line 350. Use "... 4$\pi$ [1] as the areas covered ...".\\
+{\bf Done.}
+\item Line 353. Use "In addition, the detection ...".\\
+{\bf Done.}
+\item Fig. 8 caption: Line 2. Use "... plot shows the ...".\\
+{\bf Done.}
+\item Fig. 8 caption: Line 5. Use "... curves show the applied ...".\\
+{\bf Done.}
+\item Line 365. Use "For these particles, sector ...".\\
+{\bf Done.}
+\item Line 368. Use "... as a function of the angles ...".\\
+{\bf Done.}
+\item Line 372. Use "... cuts that select ...".\\
+{\bf Done.}
+\item Fig. 9 caption: Line 2. Use "... plot shows the ...".\\
+{\bf Done.}
+\item Fig. 9 caption: Line 5. Use "... curves show the applied ...".\\
+{\bf Done.}
+\item Line 376. Use "... cuts were the best ...".\\
+{\bf We prefer to keep our version, since this statement is general and does not correspond to particular dataset.}
+\item Line 386. Use "... areas were typically caused ...".\\
+{\bf Done.}
+\item Line 391. Use "... were different for each CLAS sector.".\\
+{\bf Done.}
+\item Line 395. Use "... run, variations of the experimental conditions, e.g. fluctuations in the target density or changes in the response of parts of the detector, ...".\\
+{\bf Done.}
+\end{enumerate} 
+
+
+\item {\bf \large  Page 7:}
+\begin{enumerate} 
+
+\item Line 398. Use "Only the parts ...".\\
+{\bf Done.}
+\item Line 401. Use "... per Faraday Cup (FC) charge ...".\\
+{\bf Done.}
+\item Line 408. Use "The DAQ live time ...".\\
+{\bf Done.}
+\item Line 412. Use "... is shown as a function of the DAQ live time and the yields ...".\\
+{\bf Done.}
+\item Line 419. Use "... two final state hadrons ...".\\
+{\bf Done.}
+\item Line 421. Use "... can be reconstructed using ...".\\
+{\bf We prefer to keep our version.}
+\item Line 423. Use "... between four different event topologies depending on the ...".\\
+{\bf Done.}
+\item Line 425. Use "... final state hadrons ($X$ is the undetected particle):"\\
+{\bf The $X$ there is not necessarily the undetected particle, for example for 3-pion background it corresponds to more than one particle. So, we keep our version.}
+\item Fig. 11 caption: Line 1. Use "... of blocks as a function of DAQ ...".\\
+{\bf Done.}
+\item Fig. 11 caption: Line 2. Use "... and the yields ...".\\
+{\bf Done.}
+\item Fig. 11 caption: Line 4. Use "... lines show the applied cuts.".\\
+{\bf Done.}
+\item Line 431. Use "... conditions, topology 1 ...".\\
+{\bf Done.}
+\item Line 434. Use "... among the other ...".\\
+{\bf Done.}
+
+\end{enumerate}
+
+
+\item {\bf \large  Page 8:}
+\begin{enumerate} 
+
+\item Fig. 12 caption: Line 2. Use "... for the four event topologies ...".\\
+{\bf Done.}
+\item Fig. 12 caption: Line 5. Use "... while the curves are from the simulation. The plot shows the ...".\\
+{\bf Done.}
+\item Line 450. Use "cannot".\\
+{\bf Done.}
+\item Line 455. Use "... and the absence of ...".\\
+{\bf Done.}
+\item Line 461. Use "... 50\%), but also to ...".\\
+{\bf Done.}
+\item Line 469. Use "... final state hadrons, ... four-momenta of the initial state ...".\\
+{\bf Done.}
+\item Line 475. Use "... final state particles.".\\
+{\bf Done.}
+\item Line 479. Use "... curves show the simulation. The plots in Fig. 12 represent topologies ...".\\
+{\bf Done.}
+
+\end{enumerate}
+ 
+ 
+\item {\bf \large  Page 9:}
+\begin{enumerate}  
+ 
+\item Line 498. Use "... calculations, experimental events ...".\\
+{\bf Done.}
+\item Line 501. Use "... simulation, the reconstructed .... subject to the same summation.".\\
+{\bf Done.}
+\item Line 506. Use "... final state hadrons were known ...".\\
+{\bf We prefer to keep our version.}
+\item Line 513. Use "... sections were obtained ...".\\
+{\bf Done.}
+\item Line 527. Use "... final state hadrons ...".\\
+{\bf The sentence was changed to {\it ``The kinematic variables that describe the final hadronic state are calculated from the four-momenta of the final hadrons in the c.m.s."}}.
+\item Line 534. Use "... final state hadron description ...".\\
+{\bf The sentence was changed to {\it ``There are several ways to choose the five variables for the description of the final hadronic state."}}.
+\item Line 537. Use "... pair of hadrons ...".\\
+{\bf Done.}
+\item Line 539. Use "... pair of hadrons ...".\\
+{\bf Done.}
+\item Line 542. Use "... between the two plans (i) defined by the ... and the first final state hadron and (ii) defined by the three-momenta of all final state  hadrons ...".\\
+{\bf Done.}
+\item Line 564. Use "... encompasses about 1.2 million ...".\\
+{\bf Done.}
+\item Line 567. Use "... final state hadron ...".\\
+{\bf The collocation was changed to {\it ... in the hadronic variables ...}}.
+\item Line 571. Use "... 1.22~GeV, as well as ...".\\
+{\bf Done.}
+\item Line 574. Use "Special attention was required for ..."\\
+{\bf We prefer to keep our version in order to keep the generality of the statement.} 
+ 
+ \end{enumerate}
+ 
+
+\item {\bf \large  Page 10:}
+\begin{enumerate} 
+
+\item Table I caption. Use "... final state hadron ..."\\
+{\bf The collocation was changed to {\it ... in the hadronic variables.}}.
+\item Line 582. Use "... $M_{upper}$ was calculated ...".\\
+{\bf Done.}
+\item Line 607. Use "... extracting the cross sections, the event yield was divided .."\\
+{\bf Done.}
+\item Line 608. Use "... width $\Delta M$, thus ...".\\
+{\bf Done.}
+\item Line 612. Use "... data were not sufficient ...".\\
+{\bf Done.}
+\item Line 616. Use "... which was different ...".\\
+{\bf Done.}
+\item Line 620. Use "In addition to the above ...".\\
+{\bf Done.}
+\item Line 622. Use "... variable was assigned ...".\\
+{\bf Done.}
+\item Line 624. Use "... behavior, the ... size caused ...".\\
+{\bf Done.}
+\item Line 627. Use "... applied that included ...".\\
+{\bf Done.}
+\item Line 628. Use "... to 4\% for some ...".\\
+{\bf Done.}
+ 
+\end{enumerate}
+
+
+\item {\bf \large  Page 11:}
+\begin{enumerate} 
+
+\item Line 634. Use "... of this paper) ...".\\
+{\bf Done.}
+\item Line 635. Use "... $\sigma_e$ via:"\\
+{\bf Done.}
+\item Eq.(9) should end with a period.\\
+{\bf Done.}
+\item Line 636. Use "Here $d^5\tau$ is ...".\\
+{\bf Done.}
+\item Line 637. Use "... state that were described in Sec. IV A.".\\
+{\bf Done.}
+\item Line 638. Use "... photon flux given by"\\
+{\bf Done.}
+\item Eq.(11) should end with a period.".\\
+{\bf Done.}
+\item Line 643. Use "Here $\nu = ...$".\\
+{\bf Done.}
+\item Line 651. Use "... event was weighted ...".\\
+{\bf Done.}
+\item Line 660. Use "... hydrogen, and $N_A$ ...".\\
+{\bf Done.}
+\item Line 664. Use "... simulation and $R$ ...".\\
+{\bf Done.}
+\item Line 683. GENEV needs a reference.\\
+{\bf Done.}
+\item Line 691. Use "... approach in Ref.~[15].".\\
+{\bf Done.}
+\item Line 694. Use "... procedures. The efficiency ... was then calculated in ...".\\
+{\bf Done.}
+\item Line 702. Use "... and increased up to a few ...".\\
+{\bf Done.}
+
+
+\end{enumerate}
+ 
+ 
+\item {\bf \large  Page 12:}
+\begin{enumerate}
+
+\item Fig. 15 caption. Line 2. Use "... uncertainty vs. efficiency.".\\
+{\bf Done.}
+\item Line 710. Use "cannot".\\
+{\bf Done.}
+\item Line 712. Use "... along with the other ...".\\
+{\bf Done.}
+\item Line 714. Use "... and, therefore, some model ...".\\
+{\bf Done.}
+\item Line 725. Use "Additionally, the efficiency in some ...".\\
+{\bf Done.}
+\item Line 726. Use "... due to boundary effects, ...".\\
+{\bf Done.}
+\item Line 729. Use "These cells could be differentiated from the cells with reliable efficiency by their larger relative ...".\\
+{\bf We prefer to keep our version in order to maintain the generality of the sentence, but we removed the article "the" in front of "reliable efficiency".}
+\item Line 737. Use "As is seen in ...".\\
+{\bf We like our version better.}.
+\item Line 740. Use "... efficiency was obtained ...".\\
+{\bf Done.}
+\item Line 752. Use "... 22], as well as ...".\\
+{\bf Done.}
+\item Line 753. Use "... and, therefore, provides ...".\\
+{\bf Done.}
+\item Line 755. Use ".. describes in detail the approach ...".\\
+{\bf Done.}
+\item Line 760. Use "... to the case when the ...".\\
+{\bf Done.}
+\item Line 761. Use "... cells was ignored, and ...".\\
+{\bf Done.}
+\item Line 762. Use "... for the case when the empty cells were taken into account ...".\\
+{\bf The collocation was changed to {\it ``... for the case when that was taken into account ..."}.}
+\item Line 763. Use "The black curves represent the TWOPEG cross sections that were ...".\\
+{\bf Done.}
+\item Line 766. Use "... from the empty cells ...".\\
+{\bf Done.}
+\item Line 770. Use "... due to the negligible/zero CLAS acceptance in these regions.".\\
+{\bf The sentence was changed to "...  due to the negligible/zero CLAS acceptance in the corresponding directions."}
+\item Line 776. Use "... total statistical uncertainty, as was done in Refs.~[6,22].".\\
+{\bf Done.}
+\item Line 780. Use "... using the TWOPEG ...".\\
+{\bf Done.}
+\item Line 781. Use "... [21], which accounts ...".\\
+{\bf Done.}
+\item Line 783. Use "... known approach of Ref.~[15].".\\
+{\bf Done.}
+\item Line 785. Use "... cross sections from the non-radiative cross sections."\\
+{\bf We prefer to keep our version.}
+\item Line 787. Use "... in TWOPEG, the double-pion ...".\\
+{\bf Done.}
+\item Line 790. Use "... electron (the so-called ...".\\
+{\bf Done.}
+\item Line 792. Use "In Refs.~[15,21] the ...".\\
+{\bf Done.}
+
+ 
+\end{enumerate} 
+ 
+\item {\bf \large  Page 13:}
+\begin{enumerate}
+
+\item Fig. 16 caption: Line 1. Use "... for the cases when the contribution ...".\\
+{\bf Done.}
+\item Fig. 16 caption: Line 2. Use "... when it was taken into ...".\\
+{\bf Done.}
+\item Fig. 16 caption: Line 3. Use "... while the latter are with the ...".\\
+{\bf Done.}
+\item Line 814. Use "... final state hadron ...".\\
+{\bf Done.}
+\item Line 817. Use "... final state hadron ...".\\
+{\bf Done.}
+
+\end{enumerate} 
+
+
+\item {\bf \large  Page 14:}
+\begin{enumerate}
+
+\item Fig. 17 caption. Line 1. Use "The quantity $1/R$ (see Eq.(15)) as ...".\\
+{\bf Done.}
+\item Line 848. Use "... of the efficiency,".\\
+{\bf Done.}
+\item Line 850. Use "... by Eqs.~(16) and (17) ...".\\
+{\bf Done.}
+\item Line 857. Use "... sections, the total ...".\\
+{\bf Done.}
+\item Line 876. Use "... as uncertainties in the electron registration ...".\\
+{\bf We prefer to keep our version.}
+\item Line 882. Use "... were summed up in ...".\\
+{\bf Done.}
+\item Line 883. Use "... alternative method considers ...".\\
+{\bf We prefer to keep our version.}
+\item Line 889. Use "... includes the uncertainties due to ...".\\
+{\bf We prefer to keep our version.}
+
+\end{enumerate} 
+
+
+\item {\bf \large  Page 15:}
+\begin{enumerate}
+
+\item Fig. 18 caption: Line 1. Use "... shadowed area for each point is the total cross section ...".\\
+{\bf Done.}
+\item Fig. 18 caption: Line 3. Use "... the total systematic uncertainty. The error ...".\\
+{\bf Done.}
+\item Fig. 18 caption: Line 4. Use "... curves are the cross section prediction ... dashed curves  correspond ..."\\
+{\bf Done.}
+\item Line 916. Use "... extracted integrated cross ...".\\
+{\bf Done.}
+\item Line 917. Use "... are shown by the black circles ...".\\
+{\bf Done.}
+\item Line 918. Use "... shadowed areas correspond ...".\\
+{\bf Done.}
+\item Line 921. Use "... systematic uncertainty."\\
+{\bf Done.}
+
+\end{enumerate} 
+
+
+\item {\bf \large  Page 16:}
+\begin{enumerate}
+
+\item Fig. 19 caption: Line 2. Use "... curves are the cross section ...".\\
+{\bf Done.}
+\item Fig. 19 caption: Line 3. Use "... dashed curves correspond ...".\\
+{\bf Done.}
+\item Line 935. Use "... due to the high ...".\\
+{\bf Done.}
+\item Line 942. Use "... sections. This model aims at ...".\\
+{\bf Done.}
+\item Line 947. Use "... results is based on the JM model estimations of ...".\\
+{\bf We prefer to keep our version.}
+\item Line 949. Use "... differential), as well as ...".\\
+{\bf Done.}
+\item Line 955. Use "... sections was obtained ...".\\
+{\bf Done.}
+\item Line 957. Use "This generator employs the ...".\\
+{\bf Done.}
+
+\end{enumerate}  
+
+
+\item {\bf \large  Page 17:}
+\begin{enumerate}
+
+\item Line 962. Use "... of the model ...".\\
+{\bf Done.}
+\item Line 975. Use "... for the integrated ...".\\
+{\bf Done.}
+\item Fig. 20 caption: Line 2. Use "... integrated double-pion ...".\\
+{\bf Done.}
+\item Fig. 20 caption: Line 3. Use "... details). The different symbols ...".\\
+{\bf Done.}
+\item Line 982 (and following). Use the updated PDG format for listing resonances, e.g $P_{11}(1440)$ --> $N(1440)1/2^+$.\\
+{\bf We made the footnotes with the notations in the updated PDG format.}
+\item Line 987. Use "... data on the $Q^2$-dependences of the resonance ...".\\
+{\bf Done.}
+\item Line 988. Use "Additionally, the states ...".\\
+{\bf Done.}
+\item Line 992. Use "... values of their electrocouplings ...".\\
+{\bf Done.}
+\item Line 1004. Use "... for the integrated ...".\\
+{\bf Done.}
+\item Line 1007. Use "These contributions were obtained as the ratio of ...".\\
+{\bf We prefer to keep our version.}
+\item Line 1011. Use "... with increasing $W$ and $Q^2$, consistent with ...".\\
+{\bf Done.}
+\item Line 1012. Use "... 1.5~GeV, this contribution ...".\\
+{\bf Done.}
+\item Line 1023. Use "... extracted integrated ...".\\
+{\bf Done.}
+\item Line 1024. Use "... [4], which were obtained with a ...".\\
+{\bf We prefer to keep our version.}
+\item Line 1035. Use "... two in Ref. [4], the map of the empty cells ...".\\
+{\bf Done.}
+\item Line 1039. Use "... binning in the hadron ...".\\
+{\bf Done.}
+\item Line 1043. Use "CONCLUSIONS AND OUTLOOK".\\
+{\bf Done.}
+\item Line 1044. Use "... on integrated and ...".\\
+{\bf Done.}
+\item Line 1047. Use "The results are a significant improvement over previously ...  in this kinematic region due to the extension in the $W$ coverage and due  to the increased statistics, thereby ...".\\
+{\bf Done.}
+
+
+\end{enumerate}  
+
+
+\item {\bf \large  Page 18:}
+\begin{enumerate}
+
+\item Fig. 21 caption. Line 2. Use "... and statistical uncertainties) ...".\\
+{\bf Done.}
+\item Fig. 21 caption. Line 3. Use "... for the results from Ref. [4] ("e1c"), it is ...".\\
+{\bf Done.}
+\item Line 1052. Use "... in the CLAS physics ...".\\
+{\bf Done.}
+\item Line 1073. Use "... acceptance, in this way achieving a very ...".\\
+{\bf Done.}
+\item Line 1088. Use "... contribution that grows ...".\\
+{\bf Done.}
+\item Line 1091. Use "... extraction of the resonance electrocouplings.".\\
+{\bf Done.}
+
+\end{enumerate}  
+
+
+\item {\bf \large  Page 19:}
+\begin{enumerate}
+\item Line 1133. Use "... from the other sets of variables are ...".\\
+{\bf Done.}
+\item Line 1135. Use "... between the two planes A ...".\\
+{\bf Done.}
+\item Line 1138. Use "... all final state hadrons.".\\
+{\bf Done.}
+\item Line 1140. Use "... the c.m.s. their ...".\\
+{\bf Done.}
+\item Fig. 22 caption: Line 2. Use "... final state hadrons ...".\\
+{\bf Done.}
+\item Fig. 22 caption: Line 3. Use "... of the $\pi^-$ and ...".\\
+{\bf Done.}
+\item Fig. 22 caption: Line 4. Use "... of the auxiliary ...".\\
+{\bf Done.}
+\item Line 1146. Use "... along the $z$-axis.".\\
+{\bf Done.}
+\item Line 1149. Use "... plane B. The angle between the two planes ...".\\
+{\bf Done.}
+\item Right Column: Line 8. Use "... and in the case of ...".\\
+{\bf Done.}
+\item Right Column: Line 1161. Use "... to see that ...".\\
+{\bf Done.}
+\item Right Column: Line 1163. Use "... about the kinematics of the reactions ...".\\
+{\bf Done.}
+
+\end{enumerate}  
+
+
+\item {\bf \large References:}
+\begin{enumerate}
+
+\item Give URL for all CLAS-Notes.\\
+{\bf Done.}
+\item You do not need to include arXiv listings for already published papers.\\
+{\bf We prefer to keep them in order to facilitate the paper search.}
+\item Refs. [2], [3]. You have an extra space before the period.\\
+{\bf Done.}
+\item Ref. [15]. Use "... Rev. Mod. Phys. ...".\\
+{\bf Done.}
+\item Ref. [22]. Use "... to be published ...".\\
+{\bf Done.}\\[1cm]
+
+\end{enumerate}  
+
+
+  
+\end{itemize}
+
+
+{\bf \Large \underline{Comments by V. Mokeev}}\\[0.5cm]
+
+In the recent paper on $\pi^+\pi^-p$ electroproduction off protons by  G. Fedotov, Iu. Skorodumina, et al., my previous questions on reliability of the statistical error bars for the experimental data were fully addressed. I think it is important for us to provide appealing presentation of these new results in order to maximize their impact on hadron and strong QCD physics.
+
+ I have both ``Major physics comments" and complementary ``Editorial suggestions". I have strong feeling that the ``Major physics comments" should be implemented perhaps with edits. In a case of disagreement on implementation of the major comments, I appreciate to know the reasons.
+\\[0.5cm]
+
+ {\bf \large Major physics comments}\\[1cm]
+ 
+\begin{enumerate}
+
+\item p.1 line 24. Ref [1] should be extended as:
+
+Ad1. V.D. Burkert, Eur. Phys. J. Web Conf. 134, 01001 (2017).\\
+Ad2. V.D. Burkert and C.D. Roberts, arXiv1710.02549[nucl-ex].\\
+Ad3. Iu. A. Skorodumina et al, Moscow Univ, Phys. Bull,70, 015203 (2015).\\
+Ad4. I.G. Aznauryan and V.D. Burkert, Prog. Part. Nuvcl. Phys. 67, 1 (2012).\\[0.5cm]
+
+These references in Introduction, in my view, should introduce the place of our paper in the field of the N* physics.\\
+{\bf The Ref.[1] (in the old paper version) corresponded to the CLAS detector description, therefore it should not be extended in the suggested way. However, we have added the following Refs. to the end of the first paragraph and to the beginning of the fifth paragraph of introduction, where they are relevant.\\
+
+$[1]$ V. D. Burkert (CLAS), EPJ Web Conf. 134, 01001 (2017), arXiv:1610.00400 [nucl-ex].\\
+$[2]$ B. Krusche and S. Schadmand, Prog. Part. Nucl. Phys. 51, 399 (2003), arXiv:nucl-ex/0306023 [nucl-ex].\\
+$[3]$ I. G. Aznauryan and V. D. Burkert, Prog. Part. Nucl. Phys. 67, 1 (2012), arXiv:1109.1720 [hep-ph].\\
+$[4]$ I. A. Skorodumina et al, Moscow Univ. Phys. Bull. 70, 429 (2015), [Vestn. Mosk. Univ.,no.6,3(2015)].
+}
+
+
+
+\item p. 1 line 63. high sensitivity $\rightarrow$ essential sensitivity.
+
+ Please note that for N(1440)1/2+, N(1520)3/2-, N(1535)1/2-, N(1675)5/2-, and N(1680) 5/2+ resonance which are heavier than $\Delta$, the $N\pi$ exclusive channels are the driving source of the information on their electrocouplings.\\
+{\bf Done.} 
+
+
+\item p.15 line 925. after ``...are reported" add
+Full data set is available in the CLAS Physics Data Base [2] (reference for the current paper version)\\
+{\bf The sentence ``The whole set of the extracted cross sections is available in the CLAS physics database..." was added as the third paragraph in the section V.} 
+
+
+\item p.17 left and right. Remove the text between lines 988-998 ``Beside that.... from Ref [7]" (see justification in my previous e-mail, which is attached below)\\[0.5cm]
+
+
+in p. 17 lines 988-998 we have the statement which should be removed from the paper text.\\[0.5cm]
+
+First, we have no P13(1700) resonance at all, we do have P11(1710) or N(1700)1/2+ in the PDG notation. The contribution from $\Delta$(1600)3/2+, N(1675)5/2-, and N(1710)1/2+ to the $\pi^+\pi^-p$ electroproduction off protons at $Q^2<$1.0 GeV$^2$ is inside the data uncertainties. We never have information on these state electrocouplings at $Q^2<$1.0 GeV$^2$  from the CLAS data. References [7,33] in the paper text (lines 988-998) are just irrelevant. The paper [7] reports electrocouplings of N((1440)1/2+, N(1520)3/2-, and $\Delta$(1620)1/2- states, but DO NOT report anything on $\Delta$(1600)3/2+ or P33(1600) state. The paper [33] does report electrocouplings of N(1675)5/2-, N(1710)1/2+ states BUT at $Q^2>$1.7 GeV$^2$, while the $Q^2$-coverage of the $\pi^+\pi^-p$ electroproduction data in Fedotov/Skorodumina paper is limited by $Q^2<$1.0 GeV$^2$. Moreover, according to Fig.19,22 in Ref [33], electrocouplings A1/2 of N(1675)5/2-, and N(1710)1/2+ resonances demonstrate pronounced $Q^2$-dependence in contrast with the statement in lines 988-998 in the Fedotov/Skorodumina paper on their $Q^2$-independence. At $W<$1.8 GeV covered by Npipi data, the contributions from the tails of the $\Delta$(1905)5/2+ and $\Delta$(1950)7/2+ are inside the data uncertainties.\\[0.5cm]
+
+In my view, the best way to proceed with this problem is: just to remove the text between the lines 988-998\\[0.5cm]
+
+``Beside that the states.........taken from Ref [7]"\\[0.5cm]
+
+The paper contains the new $\pi^+\pi^-p$ of the best quality ever published for Npipi electroproduction. For this reason this paper should be published, but without confusing statement on data interpretation, which does not affect the paper core, that is the presentation of the new data set.\\[0.5cm]
+
+{\bf We made a typo listing the resonances. P13(1700) was changed to D13(1700). 
+
+You are right, the Ref.[33] (in the old paper version) was irrelevant. So, it was removed. However the reference [7] (in the old paper version)  was kept, since  for the resonances  P$_{33}$(1600), D$_{15}$(1675), D$_{13}$(1700), F$_{35}$(1905), and F$_{37}$(1950) we took the values of electrocouplings that were used for the study [7].
+
+You are right, the contribution from the resonances P$_{33}$(1600), D$_{15}$(1675), D$_{13}$(1700) is very small, therefore we changed our text in order to emphasize that better. 
+
+The resonances F$_{35}$(1905), and F$_{37}$(1950) were found to give from 2\% to 20\% of the total resonant contribution as $W$ grows from 1.7~GeV to 1.8~GeV. The corresponding sentence was added into the paper.
+
+}
+
+
+
+\item  p. 17 line 985.  The electrocouplings of these nine states $\rightarrow$ The electrocouplings of the relevant nucleon resonances in the investigated $Q^2$ range were taken from fit of the available results [Ad5] on $Q^2$-dependencies of resonance electrocouplings extracted from the CLAS $\pi^+n$, $\pi^0p$, $\eta p$ and $\pi^+\pi^-p$ exclusive electroproduction off proton data [7,9,26-35]
+
+Ad 5 https://userweb.jlab.org/$\sim$mokeev/resonance\_electrocouplings/\\[0.5cm]
+
+{\bf The suggested reference was added. We also made the following changes in the corresponding part of the text and provide there the direct reference to the study [10] (in the new paper version), where the things that you mentioned are explained in details. ``The electrocouplings of these nine states in the investigated $Q^{2}$ range were evaluated using the functions of their $Q^{2}$-dependences taken from the study~[10]. These functions were obtained as a polynomial fit of the available data on the resonance electrocouplings including those at the photon point[11,13,31-41]. Ref.~[10] describes in detail the fit procedure." }
+
+\item p. 17 before ``For all resonance states..." add
+
+Electrocouplings of the excited nucleon states in the mass range up to 1.6 GeV are currently available at photon virtualities 0$<Q^2<$5.0 GeV$^2$. In computation of the resonant contributions they were estimated  by interpolating the experimental results [Ad5] onto the  $Q^2$-grid of our $\pi^+\pi^-p$ data. The results on longitudinal electrocouplings $S_{1/2}$ for most nucleon resonances with masses above 1.6 GeV are limited by the photon virtualities $Q^2>$0.5 GeV$^2$. For these high mass resonances, A1/2 electrocouplings were determined by interpolating the available experimental results including those at the photon point. Instead, S1/2 electrocouplings were interpolated at photon virtualities $Q^2>$0.5 GeV$^2$, while within narrow $Q^2$-interval 0.4 $<Q^2<$ 0.5 GeV$^2$ we extrapolated their values assuming that they are equal to the interpolated values at $Q^2$=0.6 GeV$^2$ for each resonance.
+
+
+All approximations used in the evaluation of the resonant contribution should be written down.\\[0.5cm]
+
+{\bf We have written down the approximations used in the evaluation of the resonant contribution. The following text was added. ``Due to the scarce data on electrocouplings close to the photon point  and the fact that the $S_{1/2}$ does not exist at the photon point, the fit for the $S_{1/2}$ electrocoupling of the resonances S$_{31}$(1620), F$_{15}(1680)$, and P$^{'}_{13}$(1720) is unreliable at $Q^{2} \lesssim 0.6$~GeV$^{2}$. Therefore, for these three states at $Q^{2} \lesssim 0.6$~GeV$^{2}$ the constant value of the $S_{1/2}$ taken at the last available $Q^{2}$ point was used." 
+
+Beside that a computational mistake was found and corrected, therefore, Fig. 20 slightly changed and became more self-consistent. No additional manipulations with the electrocouplings were made on this way.}
+
+
+
+\item p.17 lines 1011-1012. ...consistent with previous studies [5,6] $\rightarrow$ consistent previous studies [5]\\
+
+Studies [6] cover $Q^2>$2.0 GeV$^2$. Resonant contributions at $Q^2>$2.0 GeV$^2$ and at $Q^2<$1.0 GeV$^2$ are just incompatible. There is no way to confront them.\\[0.5cm]
+
+{\bf Being obtained in different $Q^{2}$ regions, the resonant contributions can either be consistent or inconsistent with each other. The word ``consistent" here is used in the meaning ``compatible with". Therefore, the Ref.[6] (in the old paper version) should be kept.
+
+
+Beside that, we have extended the reference set with Ref.[12] (in the new paper version), which also reports the resonant contributions to the cross sections in the close kinematic region.}\\[0.5cm]
+
+
+
+\end{enumerate}
+
+
+ {\bf \large Editorial suggestions}\\[1cm]
+ 
+\begin{enumerate}
+
+\item p2. line 77. the JM model [7]$\rightarrow$ the JM model [7,9,12,16]\\
+{\bf This reference should not be extended with Refs.[12,16] (in the old paper version) since they do not refer to the JM model. The references [7-9] are given in the next sentence.}
+
+
+\item p.3 line 160 Abbreviations DC, CC, TOF, and so on, should be defined before not after their first use in the text.\\[0.5cm]
+{\bf The abbreviations DC, CC, TOF, and EC are firstly introduced on page 2, Section II, first paragraph. }
+
+
+\item  p. 3 line 181 $\pi^-$ losses $\rightarrow$ $\pi^-$ ionization losses
+
+Note that $\pi^-$ can suffer also nuclear interactions producing high energy tail for the deposited energy\\[0.5cm]
+{\bf  ``loses" is a verb there.  }
+
+\item p3 line 194 and Fig. 3 I was unable to see the vertical line in Fig. 3\\[0.5cm]
+{\bf  ``line"  was changed to ``line segment". }
+
+
+\item  p.5 line 294. the momentum $\rightarrow$ the measured momentum\\[0.5cm]
+{\bf  Done. }
+
+
+\item p. 5 lines 315-319 ```Here, due to....can be neglected"
+
+This part is not fully clear, in particular for outsider-readers.
+
+Which total momentum we are speaking about, in which frame? In the CM, the total momentum of the final hadrons or the initial photon and proton is equal to zero. The fraction of zero makes no sense. Total momentum of the final hadrons should be equal of the total momentum of the initial photon and proton for any reaction. So, if we are speaking on the fraction of the energy-momentum transfer through the virtual photon which is carried out by each final hadron, it is in fact smaller in Npipi in comparison with Npi, while the absolute values of the final hadron momenta are fully determined by the W and by the five kin. variables for the final state kinematics. I propose to re-phrase this paragraph making it more clear.\\
+{\bf Here we are talking about the hadron momenta in the lab. frame. The total momentum there is equal to the beam energy.}
+
+
+
+
+\item p.6 line 372. I propose to define more quantitatively ``...a relatively flat particle density"\\
+{\bf This comprehensive collocation was formulated at the stage of the Ad-Hoc review, and we prefer to keep it.}
+
+
+\item In Fig. 10 there is depletion at theta ~ 10-20 deg. How we treat this depletion? If it is outside the fiducial cut, may be the fiducial cut should be shown in Fig. 10?\\
+{\bf We do not know exactly the origin of this depletion and can suppose that this is due to the dead DC wires. It is reproduced by the MC and hence does not affect the cross section.}
+
+
+
+\item  Fig. 11 ...blocks as function of DAQ time $\rightarrow$ ...blocks versus DAQ time\\
+{\bf We prefer to keep our version.}
+
+
+\item  Fig. 12. It is unclear to which integral the distributions are normalized.\\
+{\bf As it is written there the distributions are normalized to the ``corresponding integrals". This is a standard expression that means that distributions are normalized in a way that the integral under the curve is equal to 1 (after the normalization).}
+
+
+\item  p.9 lines 567-568 Replace the text ``The binning size...$Q^2$ bins" as:
+
+The binning over the final hadron variables is listed in Table I. It was chosen as compromise between the minimal bin size over kinematics variables and affordable statistical accuracy.\\
+{\bf The sentence was changed to ``It was chosen to maintain reasonable statistical uncertainties of the single-differential cross sections for all $W$ and $Q^{2}$ bins."}
+
+
+\item  Despite all my efforts, I was unable to understand the text between lines 597-609 in p.10. If possible, please write it in more clear form.\\
+{\bf This paragraph was refined multiple times during the analysis note and paper preparation and reviews. As a result this comprehensive explanation was achieved. The paragraph looks well-written to us.}
+
+
+
+\item  p.11 lines 683-691.
+
+As it is written, the paragraph is contradictory. If GENEV is using phase space, it does not use the JM05 model. I guess, $\pi^+\pi^-p$ channel was simulated within JM05, while for three-pion background the phase space was used. Please, rephrase the paragraph making it self-consistent.\\[0.5cm]
+{\bf  This is exactly what is written there.  }
+
+
+\item  p. 12.n I strongly recommend to replace empty cells $\rightarrow$ blinded cells
+
+or any other English word differentiating the cells of zero acceptance from empty not populated by the measured events cells.\\
+{\bf We prefer to keep this notation. The definition of empty cells is clearly written in the fourth paragraph of section D.}
+
+
+\item Better to present the summary Table of systematic uncertainties similar as done in Ref [6].\\
+{\bf We think that the Section ``Systematic uncertainties" clearly explains the subject in a way it is written now.}\\[1cm]
+
+\end{enumerate}
+
+
+
+{\bf \Large \underline{Comments by D. Ireland}}\\[0.5cm]
+
+Dear Gleb, et al.,
+
+I have just a few comments on the draft paper, which looks to be in good shape:
+
+\begin{enumerate}
+
+
+\item line 24: referencing the CLAS technical paper is better left to the experimental section; it is more important to reference some physics results, such as the previous measurements that are described.\\
+{\bf We refer to the CLAS detector at the place, where it is firstly mentioned. The references to the previous measurements are given in the introduction as well.}
+
+\item lines 34-37: again, these sentences belong in the experimental section.\\
+{\bf Here (as it is common for an introduction) we introduce to a reader the focus of the paper thus providing some general statements concerning the data analysis and obtained results.}
+
+\item figure 15: This figure is a little confusing. Is it not enough to simply state that cells with $\delta\epsilon/\epsilon$ greater than 0.3 were not included because of concern over statistical accuracy?\\
+{\bf The cut on $\delta\mathcal{E}/\mathcal{E}$ is a new feature of this analysis that was not used in the previous studies (we refer to them in the text). Beside that, the chosen position of this cut affects the amount of the empty cells and, therefore, alters the model dependence of the results. Thus it is extremely important to provide all the details of this procedure.}
+
+\item line 799-802: I am not sure that, just because an approach for describing radiative processes in exclusive double-pion electroproduction is not available, it follows that a simpler assumption is adequate.
+
+Some re-wording maybe better, what about "The latter assumption is necessary, since approaches that are capable of describing radiative processes in double-pion electroproduction are not yet available."\\
+{\bf The word ``adequate" here is used in the meaning ``satisfactory or acceptable in quality for our needs". Beside that, the following sentence given in this section justifies the applicability of the procedure. ``However, 
+the need to integrate the cross section at least over four hadronic variables (see Eq.~(13)) considerably reduces the influence of the final state hadron kinematics on the radiative correction factor, thus justifying  the applicability of the procedure". }
+
+
+\end{enumerate}
+
+
+\end{document}
