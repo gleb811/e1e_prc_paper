@@ -1,8 +1,7 @@
 
 \RequirePackage{lineno} 
 \documentclass[prc,twocolumn,superscriptaddress,showpacs,amssymb,amsmath,amsfonts,aps,nofootinbib]{revtex4-1}
-%\documentclass[prc,preprint,superscriptaddress,showpacs,amssymb,amsmath,amsfonts,aps]{revtex4}
-%\setlength{\topmargin}{-1.0cm}
+
 \usepackage{array,mathtools,amssymb,booktabs}
 \newcolumntype{C}{>{$}c<{$}}
 \AtBeginDocument{
@@ -20,7 +19,7 @@
 \usepackage{graphicx}
 \usepackage{dcolumn}
 \newcolumntype{d}[1]{D{.}{.}{-1}} 
-%\usepackage{epsfig}
+
 \usepackage{latexsym}
 \usepackage{amsmath} 
 \usepackage{url}
@@ -32,7 +31,7 @@
 \usepackage{multirow}
 \usepackage{hyperref}
 \usepackage{float}
-%\restylefloat{table}
+
 \usepackage[margin=20mm]{geometry}
 
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -40,21 +39,15 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 
 
-%\def\striplastS#1{\striplastSa{#1}#1\end .\end\eend}
-%\def\striplastSa#1#2.\end#3\eend{\ifx\end#3\end#1\else#2\fi}
 
-%\usepackage[dvips]{color}
-
-%\newcommand{\Dfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
-%\newcommand{\F}[1]{Figure~\ref{#1}}
 \pagenumbering{arabic}
 \pdfminorversion=5 
 \pdfcompresslevel=9
 \pdfobjcompresslevel=9
 
-%
+
 \begin{document}
-%\linenumbers
+
 \date{\today}
 \title{\large Measurements of the $\gamma_{v} p \rightarrow p'
 \pi^{+} \pi^{-}$
@@ -205,7 +198,7 @@ $1.3\enskip {\rm GeV} < W <1.825\enskip {\rm GeV}$\\}
 
 \newcommand*{\NOWISU}{Idaho State University, Pocatello, Idaho 83209}
 \newcommand*{\NOWINFNGE}{INFN, Sezione di Genova, 16146 Genova, Italy}
- %%%%%%%%%%%%%%% END OF Latex Macros for institute addresses  %%%%%%%%%%%%%%%%%%%%%%%%% 
+
 
 
 
@@ -228,15 +221,17 @@ $1.3\enskip {\rm GeV} < W <1.825\enskip {\rm GeV}$\\}
 \affiliation{\MSU}
 \author {S. Adhikari} 
 \affiliation{\FIU}
+\author {Whitney~R.~Armstrong} 
+\affiliation{\ANL}
 \author {H.~Avakian} 
 \affiliation{\JLAB}
 \author {J.~Ball} 
 \affiliation{\SACLAY}
 \author {I.~Balossino} 
 \affiliation{\INFNFE}
-\author {L. Barion} 
+\author {L.~Barion} 
 \affiliation{\INFNFE}
-\author {M. Bashkanov} 
+\author {M.~Bashkanov} 
 \affiliation{\EDINBURGH}
 \author {M.~Battaglieri} 
 \affiliation{\INFNGE}
@@ -260,7 +255,7 @@ $1.3\enskip {\rm GeV} < W <1.825\enskip {\rm GeV}$\\}
 \affiliation{\INFNGE}
 \author {G.~Charles} 
 \affiliation{\ODU}
-\author {T. Chetry} 
+\author {T.~Chetry} 
 \affiliation{\OHIOU}
 \author {G.~Ciullo} 
 \affiliation{\INFNFE}
@@ -512,14 +507,12 @@ This investigation is typically carried out through the detailed analysis of the
  
  A large amount  of experimental data on exclusive meson photo- and electroproduction has been collected in Hall B at Jefferson Lab with the CLAS detector~\cite{Me03}.
 The analysis of these data has already provided a lot of information on differential cross sections and different single- and double-polarization asymmetries with almost complete coverage of the final hadron phase space\footnote[1]{The numerical results on observables measured with the CLAS detector are available in the CLAS physics database~\cite{CLAS_DB}.}. Some kinematic areas, however, are still lacking this information. 
-% The numerical results on observables measured with the CLAS detector are available in the CLAS physics database~\cite{CLAS_DB}. 
-% Although the analysis of these data has already provided a lot of information about various exclusive channels~\cite{CLAS_DB}, some kinematic areas are still lacking.
+
 
 This paper introduces new information on the fully-integrated and single-differential cross sections of the reaction  $\gamma_{v} p \rightarrow p' \pi^{+} \pi^{-}$ at $1.3$~GeV $< W < 1.825$~GeV and $0.4$~GeV$^{2}$ $< Q^{2} < 1.0$~GeV$^{2}$. The cross sections were extracted along the standards of the CLAS data analysis and added into the CLAS physics database~\cite{CLAS_DB}. They are also available on GitHub~\cite{Github:data}. High experimental statistics allow for narrow binning (i.e. 0.05~GeV$^{2}$ in $Q^{2}$ and 25~MeV in $W$), as well as smaller statistical uncertainties than were achieved in previous studies of double-pion electroproduction cross sections~\cite{Fedotov:2008aa,Ripani:2002ss,Isupov:2017lnd}. The conditions of the experiment and the data analysis procedure are described in Sections II~-~IV.
 
 
-%which were extracted via the CLAS data analysis.
-%The cross sections were obtained with narrow binning (i.e. 0.05~GeV$^{2}$ in $Q^{2}$ and 25~MeV in $W$) at $1.3 < W < 1.825$~GeV and $0.4 < Q^{2} < 1.0$~GeV$^{2}$.
+
 
 The kinematic region covered by the analyzed data has already been partially investigated by measurements of double-pion electroproduction cross sections~\cite{Ripani:2002ss,Fedotov:2008aa}.  
 The cross sections reported in Ref.~\cite{Fedotov:2008aa}, although extracted in  $Q^{2}$ bins of the same width (0.05~GeV$^{2}$),  overlap with the present results only in the low region  $0.45$~GeV$^{2}$ $< Q^{2} < 0.6$~GeV$^{2}$ and $W$ up to $\sim$1.55~GeV. The comparison of the present results with the measurements from Ref.~\cite{Fedotov:2008aa} is given in Section~\ref{prev_data}.
@@ -533,7 +526,7 @@ The extracted cross sections are of great significance for these studies due to 
 The most common way to investigate  nucleon resonances  is to perform a phenomenological analysis of the observables within a reaction model, as in the case of the double-pion exclusive channel with the JM  model~\cite{Mokeev:2015lda}. This model, which aims at the extraction of resonance electrocouplings and the identification of different reaction mechanisms, has proven itself as an effective tool for the analysis of the experimental cross sections~\cite{Mokeev:2008iw,Mokeev:2012vsa,Mokeev:2015lda}.
 
 
-%The extracted cross sections are of great significance for the studies of nucleon resonances, since many excited nucleon states with masses above 1.6 GeV are known to decay mostly with the emission of two charged pions. 
+
 
 
 Section V introduces the JM model based preliminary interpretation of the extracted cross sections, which includes the estimation of  contributions from nucleon resonances. 
@@ -548,7 +541,7 @@ $N'(1720)3/2^+$~\cite{Mokeev:2015moa}), will be the subject of a future publicat
 
 
 \section{Experimental setup}
-%Run conditions, target photo, z-vertex plot for data (full + empty targets) one for all sectors.
+
 
 
 The data reported in this paper were acquired at JLab Hall~B  with the CEBAF Large Acceptance Spectrometer (CLAS)~\cite{Me03}, which consisted of six sectors that were operated as independent detectors. Each sector included Drift Chamber (DC), a \v Cerenkov Counter (CC), a Time-Of-Flight system (TOF), and a sampling Electromagnetic Calorimeter (EC). The CLAS detector had a toroidal magnetic field that bent charged particle trajectories and therefore allowed for the determination of their momenta in the DC.
@@ -570,10 +563,7 @@ The experimental configuration for the analyzed dataset was the following. The t
 The data  were obtained with a 2-cm-long liquid hydrogen target, located at -0.4 cm along the $z$-axis (near the center of CLAS), and a 2.039 GeV electron beam.
 
 
-The target was specific to the ``e1e" run period and its setup is presented in Fig.~\ref{fig:e1e_target}. 
-%It had a conical shape with the diameter varying from 0.4 to 0.6 cm. The reason for the target to be conical originated from the following issue. In some instances the cooling system could not extract all the heat generated by the beam and the hydrogen in the target cell could boil. If bubbles stayed along the beamline, the actual luminosity would deviate from the expected value and the absolute measurement would lack accuracy. The conical shape helped to direct bubbles upwards and into a wider area of the target, thus clearing the beamline.
-In order to avoid bubble formation, the target had a special conical shape that allowed draining the bubbles away from the beam interaction region.
-The target cell had 15-$\mu$m-thick aluminum entrance and exit windows. In addition, an aluminum foil was located 2.0~cm downstream of the target center. This foil was made exactly the same as the entry/exit windows of the target cell and served for both  the estimation of the number of events that originated in the target windows and the precise determination of the target $z$ position along the beamline.
+The target was specific to the ``e1e" run period and its setup is presented in Fig.~\ref{fig:e1e_target}. In order to avoid bubble formation, the target had a special conical shape that allowed draining the bubbles away from the beam interaction region. The target cell had 15-$\mu$m-thick aluminum entrance and exit windows. In addition, an aluminum foil was located 2.0~cm downstream of the target center. This foil was made exactly the same as the entry/exit windows of the target cell and served for both  the estimation of the number of events that originated in the target windows and the precise determination of the target $z$ position along the beamline.
 
 
 
@@ -593,9 +583,8 @@ In Fig.~\ref{fig:zvertex} the distributions of electron coordinate $z$ at the in
 \section{Exclusive reaction event selection}
 \label{expt}
 
-To identify the reaction $e p \rightarrow e' p' \pi^{+} \pi^{-}$, the scattered electron and at least two final state hadrons need to be detected, while the four-momentum of the remaining hadron can be calculated from energy-momentum conservation.
-The fastest particle that gives signals in all four parts of the CLAS detector (DC, CC, TOF, and EC) was chosen as the electron candidate for each event. To identify hadrons, only signals in the DC and TOF were required. 
-%The recipe of the exclusive event selection is given below, in more details it is described in  Ref.~\cite{Fed_an_note:2017}.
+To identify the reaction $e p \rightarrow e' p' \pi^{+} \pi^{-}$, the scattered electron and at least two final state hadrons need to be detected, while the four-momentum of the remaining hadron can be calculated from energy-momentum conservation. The fastest particle that gives signals in all four parts of the CLAS detector (DC, CC, TOF, and EC) was chosen as the electron candidate for each event. To identify hadrons, only signals in the DC and TOF were required. 
+
 
 
 \subsection{Electron identification}
@@ -642,9 +631,7 @@ As was shown in Ref.~\cite{Osipenko:2004}, there was a contamination in the meas
 
 
 It turned out that the CC had some inefficient zones  that could not be simulated by the Monte Carlo technique as being too dependent on specific features of the CC design.
-Signals from these zones, being depleted of photoelectrons, shifted the measured CC spectrum toward zero and therefore add up to the few photoelectron peak. Thus the inefficient zones can be differentiated from the efficient ones by a more pronounced few photoelectron peak.
-%Signals from inefficient zones being depleted of good events had therefore a strong relative noise contribution that in turn resulted in a very pronounced few photoelectron peak. 
-The following criterion for the geometrical selection of the efficient zones in the CC was used (see Ref.~\cite{Fed_an_note:2017} for details)  
+Signals from these zones, being depleted of photoelectrons, shifted the measured CC spectrum toward zero and therefore add up to the few photoelectron peak. Thus the inefficient zones can be differentiated from the efficient ones by a more pronounced few photoelectron peak. The following criterion for the geometrical selection of the efficient zones in the CC was used (see Ref.~\cite{Fed_an_note:2017} for details)  
 \begin{equation}
 \frac{N_{\text{N}_{\text{ph. el.}}>5}(\theta_{\text{cc}},\varphi_{\text{cc}})}{N_{\text{tot}}(\theta_{\text{cc}},\varphi_{\text{cc}})} > 0.8,
 \label{eq:ineff_zone_cut}
@@ -882,10 +869,6 @@ The topologies were defined so that they did not overlap. For example, the topol
 This approach allowed not only an increase of the analyzed statistics (about 50\%), but also to populate events in a broader part of the reaction phase space, since the topologies had non-identical kinematic coverage. 
 
 
-%Since the topologies are different not only in statistics but also in kinematic coverage, this approach adding only about 20\% of the statistics allows to decrease model dependence of the obtained cross sections populating with events kinematic cells not available in topologies one and four. 
-
-
-%to increase statistics and populate with events kinematic cells not available in topologies one and four.
 
 
 
@@ -924,7 +907,6 @@ considering the ratio of three-pion/double-pion cross sections
  
 For the purpose of the cross section calculations, experimental events from all four topologies were summed up in each multi-dimensional bin. With respect to the simulation, the reconstructed Monte Carlo events were also subject to the same summation.
 
-%The $3\pi$ background can be barely seen as a separate peak on the right side of the missing mass squared distributions for the exclusive topology in last two $W$ bins (see Fig.~\ref{fig:excl_miss_mass} bottom row). For the other topologies the $3\pi$ background cannot be seen as a separate peak and it manifests itself as a contribution to the tail on the right side of the missing mass squared distributions.
 
 
 
@@ -952,12 +934,8 @@ For the purpose of the cross section calculations, experimental events from all 
 
 
 
-%\begin{figure*}[htp]
-%\begin{center}
-%\frame{\includegraphics[width=0.95\textwidth]{pictures/miss_en/miss_en.pdf}}
-%\caption{\small   Missing energy distributions for various topologies. Left plot corresponds to the topology where all final hadrons are registered and other plots correspond to the topologies with missing $\pi^-$, $\pi^+$, or proton, respectively. Vertical lines show the applied cut. All events on the right side of the lines are selected as good for analysis.\label{fig:miss_en}}
-%\end{center}
-%\end{figure*}
+
+
 
 
 
@@ -998,7 +976,7 @@ hadrons $M_{h_{2}h_{3}}$;
 the virtual photon (or initial proton) and the first final state hadron and (ii) defined by the three-momenta of all final state hadrons (see Appendix~\ref{app_a}).
 \end{itemize}
 
-%\afterpage{\clearpage}
+
 
 The cross sections  were obtained in three sets of variables depending on
 various assignments for the first, second, and
@@ -1026,7 +1004,6 @@ The white boundary limits the analyzed kinematic area, where the double-pion cro
 \begin{figure}[htp]
 \begin{center}
  \includegraphics[width=8.5cm,keepaspectratio,trim=0mm 4mm 0mm 0mm,clip]{pictures/binning/q2vsw.pdf} 
-%\vspace{-0.1cm}
 \caption{$Q^2$ versus $W$ distribution populated with selected double-pion events. The cross section was calculated in 2D cells within the white boundaries.}
 \label{fig:q2vsw}
 \end{center}
@@ -1034,34 +1011,7 @@ The white boundary limits the analyzed kinematic area, where the double-pion cro
 
 The binning in the hadronic variables is listed in Table~\ref{tab:summary_bins}. It was chosen to maintain reasonable statistical uncertainties of the single-differential cross sections for all $W$ and $Q^{2}$ bins. The binning choice also takes into account the cross section drop near the double-pion production threshold at $\approx 1.22$~GeV, as well as the broadening of the reaction phase space with increasing $W$. 
 
-%\begingroup
-%\squeezetable
-%\begin{table*}[htp]
-%\centering 
-%\caption{\small The binning  in the hadronic variables. \label{tab:summary_bins}}
-%\large
-%\begin{tabular}{|C{0.25\textwidth}|C{0.16\textwidth}|C{0.16\textwidth}|C{0.18\textwidth}|C{0.18\textwidth}|}
-%\hline \diagbox{$W$ range}{Variable} & 
-%\rule{0pt}{3ex} Number of bins in invariant mass $M$ &
-%\rule{0pt}{3ex} Number of  bins in polar angle $\theta$ &
-%\rule{0pt}{3ex} Number of bins in  azimuthal angle $\varphi$ & 
-%\rule{0pt}{3ex} Number of bins in angle between two planes $\alpha$ \\
-%\hline
-% 1.3 - 1.35 GeV & 8 & 6 & 5 & 5\\
-%\hline
-%1.35 - 1.4 GeV & 10 & 8 & 5 & 6\\
-%\hline 
-% 1.4 - 1.45 GeV & 12 & 10 & 5 & 8\\
-%\hline 
-% $ > 1.45$ GeV & 12 & 10 & 8 & 8\\
-%\hline 
-%\end{tabular}
-%\end{table*}
-%\endgroup
 
-
-%\begingroup
-%\squeezetable
 \begin{table*}[htp]
 \centering 
 \caption{\small Number of bins for each hadronic variable \label{tab:summary_bins}}
@@ -1078,10 +1028,8 @@ The binning in the hadronic variables is listed in Table~\ref{tab:summary_bins}.
     \bottomrule
   \end{tabular}
 \end{table*}
-%\endgroup
 
 Special attention is required for the binning in the invariant masses. 
-%As it is shown in Eq.~\eqref{eq:inv_mass_boundary}, the left boundary of the invariant mass distributions is fixed, while the right one grows with $W$:
 The upper and lower boundaries of the invariant mass distributions depend on the hadron masses and $W$ as: 
 
 \begin{equation}
@@ -1091,7 +1039,7 @@ M_{\text{upper}}(W) & = W - m_{h_3}, \label{eq:inv_mass_boundary}
 \end{aligned}  
 \end{equation}
 where  $m_{h_1}$, $m_{h_2}$, and $m_{h_3}$ are the masses of the final hadrons. 
-%The value of $W_{\text{center}}$ is taken at the center of the corresponding bin $W_{\text{left}} < W < W_{\text{right}}$ , since the extracted cross section is assumed to be assigned to the center of a bin.
+
 
 Since the cross section is calculated in a bin 
 $W_{\text{left}} < W < W_{\text{right}}$, the boundary of $M_{\text{upper}}$ is not distinct. 
@@ -1107,20 +1055,11 @@ the bin width $\Delta M$ determined as:
 \end{aligned}  
 \end{equation} 
 where $N_{\text{bins}}$ is the number of the bins specified in the first row of Table~\ref{tab:summary_bins}. 
-%It leads to the fact that invariant mass distributions are broader at high $W$ and hence a more detailed binning in that area is necessary (see Tab.~\ref{tab:summary_bins}).
 
 
 
-%All events from the range $W_{\text{left}} < W < W_{\text{right}}$ contribute to the invariant mass distributions. 
-%Since $$
-%the right boundary of these distributions  is calculated using $W_{\text{center}}$, some events turned out to be located beyond $M_{\text{right}}$. 
-%Hence it was decided to use the following specific arrangement of bins.
-% Firstly the bin width $\Delta M$ was determined as:
-%\begin{aligned}
-%\Delta M = \frac{M_{\text{right}}-M_{\text{left}}}{N_{\text{bins}}-1}, \label{eq:bin_width}
-%\end{aligned}  
-%\end{equation} 
-%where $N_{\text{bins}}$ was the number of the bins specified in Tab.~\ref{tab:summary_bins}. 
+
+
 
 \begin{figure}[htp]
 \begin{center}
@@ -1134,37 +1073,29 @@ The black points at $M_{\text{left}}^{N_{\text{bins}}-1}$ and $M_{\text{right}}^
 \end{center}
 \end{figure}
 
-The chosen arrangement of bins forces the last bin to be situated completely out of the boundaries given by Eq.~\eqref{eq:inv_mass_boundary} using $W_{\text{center}}$.
-%Then the invariant mass distributions were obtained within the limits from $M_{\text{left}}$ to $M_{\text{right}}+\Delta M$ causing the last bin to be situated completely out of the boundaries given by Eq.~\eqref{eq:inv_mass_boundary}.
-The cross section 
+The chosen arrangement of bins forces the last bin to be situated completely out of the boundaries given by Eq.~\eqref{eq:inv_mass_boundary} using $W_{\text{center}}$. The cross section 
 for this extra bin was very small, but it was kept so that no 
 events were lost. When integrating the cross section over the 
 mass distribution, these events in the extra bin were included, 
 but a cross section for this bin is not reported.
-% Although the cross section obtained in this bin was very small, this bin was however kept since its content contributed to all other cross sections obtained by integration over the corresponding invariant mass. 
-%After the binning corrections (described below) this effect was assumed to be taken into account and finally this last bin in invariant masses was neglected. 
+ 
 
 The cross section in the next to last bin (labeled as bin number 
-$N_{\text{bins}}-1$) should be treated carefully.
-%In Fig.~\ref{fig:mass_corr} the distributions of the invariant mass $M_{h_{1}h_{2}}$ are schematically illustrated for three values of $W$, i.e. $W_{\text{left}}$ -- dot-dashed curve, $W_{\text{center}}$ -- solid curve, and $W_{\text{right}}$ -- dashed curve. 
-This is best illustrated in Fig.~\ref{fig:mass_corr}, which shows schematically the 
+$N_{\text{bins}}-1$) should be treated carefully. This is best illustrated in Fig.~\ref{fig:mass_corr}, which shows schematically the 
 distribution of events in mass, ending in $M_{\text{upper}}$ for three 
 choices of $W$ at $W_{\text{left}}$ (dot-dashed), $W_{\text{center}}$ (solid) and 
 $W_{\text{right}}$ (dashed).
 The black points at $M_{\text{left}}^{N_{\text{bins}}-1}$ and $M_{\text{right}}^{N_{\text{bins}}-1}$ show the left and right boundaries of the next to last bin, respectively. In the next to last bin events with $W < W_{\text{center}}$ are 
 distributed over a range, which is less than $\Delta M$ defined by Eq.~\eqref{eq:bin_width}.
 However, when extracting the cross sections, the event yield was divided by the full bin width $\Delta M$, thus leading to an underestimation of the cross section.
-%The invariant mass distributions for $W$ from $W_{\text{left}}$ to $ W_{\text{center}}$  have the right edges within this bin.
-%As a consequence some events that contribute to the next to last bin are distributed in the range, which is less than the invariant mass bin width $\Delta M$ defined by Eq.~\eqref{eq:bin_width}. 
 
-%Since on a level of cross section extraction the bin width $\Delta M$ given by Eq.~\eqref{eq:bin_width} is always used, this effect leads to the cross section underestimation.
 
 
 
 The correction for this effect was made using the TWOPEG double-pion event generator~\cite{Skorodum:EG}, because the statistics of the experimental data were not sufficient for this purpose. 
 The correction factor to the cross section in the next to last bin is the ratio of the simulated cross sections calculated with fixed $\Delta M$ defined by Eq.~\eqref{eq:bin_width} and with $\widetilde{\Delta M} = W - m_{h_{3}} - M_{\text{left}}^{N_{\text{bins}}-1}$, which was different for each generated event. This factor provided the correction to the cross section in the next to last bin that varied from 5\% to 10\%.
 
-%For that purpose for each invariant mass two  one-dimensional distributions were generated in each $W$ bin. The first one mimicked the data distribution, for which all events in the next to last bin were divided by the same bin width $\Delta M$.  For the second one events with $W$ between $W_{\text{center}}$ and $W_{\text{right}}$ were divided by $\Delta M$, while events with $W$ between $W_{\text{left}}$ and $W_{\text{center}}$ were divided by the bin width that was individual for each event and equal to $W - m_{h_{3}} - M_{\text{left}}^{N_{\text{bins}}-1}$, where $M_{\text{left}}^{N_{\text{bins}}-1}$ was the left boundary of the next to last bin (see left solid vertical line in Fig.~\ref{fig:mass_corr}). The correction factor, by which obtained single-differential cross sections in the next to last bin should be multiplied, was defined as the ratio of the bin content of the second distribution over that of the first one. This factor provided the correction to the cross section in the next to last bin that varied from 5\% to 10\%. 
+
 
 In addition to the above procedure, one more binning issue should be considered.
 The cross section extracted within the bin in any kinematic variable was assigned to its central point. In the areas with non-linear cross section behavior, the finite bin size caused the distortion of the cross section value due to its averaging within the bin. To cure this effect, a binning correction was applied that included a cubical spline approximation for the cross section shape~\cite{Fed_an_note:2017}. The typical value of the correction was $\sim$~1\% rising up to 4\% for some data-points at low $W$. 
@@ -1229,8 +1160,7 @@ mass, $E_{\text{beam}} = 2.039$~GeV is the energy of the incoming electron beam,
 Here $\nu = E_\text{{beam}} - E_{e'}$ is the virtual photon energy, while $E_{e'}$ and
 $\theta_{e'}$ are the energy and the polar angle of the scattered electron in the
 lab frame, respectively. 
-%$W$, $Q^{2}$ and $\theta_{e'}$ are
-%taken in the center of the bin.
+
 
 The experimental electron scattering cross section $\sigma_{e}$ introduced in Eq.~\eqref{fulldiff} was calculated as
   
@@ -1253,7 +1183,7 @@ number.
 In Eq.~\eqref{expcrossect}  $\mathcal{E} = \mathcal{E}(\Delta W, \Delta Q^{2}, \Delta^{5} \tau)$ is the detector efficiency for the seven-dimensional bin coming from the  Monte Carlo simulation and $R = R(\Delta W, \Delta Q^{2})$ is the
 radiative correction factor described in Sec.~\ref{rad_corr}. 
 
-%Infinitesimal differentials in the left hand side of Eq.~\ref{expcrossect} 
+
 The electron scattering cross section in the left hand side of Eq.~\eqref{expcrossect} was assumed to be obtained in the center of the finite seven-dimensional kinematic bin $\Delta W \Delta Q^{2} \Delta^{5} \tau$.
 
 
@@ -1329,9 +1259,7 @@ The curves show the TWOPEG cross sections that were used as a model assumption f
 \end{center}
 \end{figure*}
 
-%Include how empty cells were filled out + combinations of various topologies. 1D plots with comparison of the cross section with and without empty cells filled out. Describe efficiency error cut.
 
-%It needs to be mentioned that kinematic cells where $N_{\text{rec}} >= N_{\text{gen}}$ are treated as empty cells with no efficiency. Such cells are very rare and usually located near the edges of the invariant mass distributions where the cross section is close to zero.
 
 
 
@@ -1491,7 +1419,6 @@ Finally for the single-differential cross sections, the total statistical uncert
 
 
 
-% Sect.~\ref{eff_err}.
 
 \begin{figure*}[htp!]
 \begin{center}
@@ -1563,11 +1490,6 @@ The whole set of the extracted cross sections is available in the CLAS physics d
 The extracted cross sections benefit from the minimal statistical uncertainty and the minimal model dependence among the previous studies of double-pion electroproduction cross sections~\cite{Fedotov:2008aa,Isupov:2017lnd,Ripani:2002ss}. This was achieved due to the high experimental statistics and the fact that four reaction topologies were analyzed in combination. 
 
 
-%High experimental statistics and topology combination approach allowed to minimize the statistical uncertainty and the model dependence of the result comparing with previously available data~\cite{Fedotov:2008aa,Isupov:2017lnd,Ripani:2002ss}. 
-%The statistical uncertainty $\delta^{\text{tot}}_{\text{stat}}$ 
-
-
-%for the statistical uncertainty smaller than previously achieved~\cite{}. The data benefits
 
 \subsection{Comparison with the model }
 
@@ -1656,11 +1578,8 @@ The double-pion cross sections reported in Ref.~\cite{Ripani:2002ss} also partia
 
 The cross section extraction procedure has some improvements in comparison with previous studies~\cite{Fedotov:2008aa,Ripani:2002ss,Isupov:2017lnd}.  An original method of revealing cells with unreliable efficiency via a cut on the relative efficiency uncertainty was applied. The cross sections in kinematic cells with zero acceptance were estimated using a recently developed event generator TWOPEG~\cite{Skorodum:EG}. All available reaction topologies were combined together to minimize statistical uncertainties as well as the contribution from kinematic cells with zero acceptance, in this way achieving a very modest model dependence of the obtained cross sections.
 
-%the model dependence of the obtained cross sections caused by the contribution from the kinematic cells with zero acceptance.
 
-The obtained cross sections are compared with the predictions of the JM model based TWOPEG event generator, which currently provides the best double-pion cross section estimation in the investigated kinematic region. 
-%This event generator is based on the cross sections from the JM15 model fit to the data~\cite{Ripani:2002ss,Mokeev:2012vsa,Fedotov:2008aa,Golovach:note} as well as the data~\cite{Wu:2005wf,ABBHHM:1968aa} itself. In kinematic regions not covered by previous data, TWOPEG employs a specific procedure of cross section interpolation. 
-The comparisons presented in Fig.~\ref{fig:sys_err} and Fig.~\ref{fig:res_cont} show reasonably good agreement between the TWOPEG estimations (solid curves) and the experimental cross sections (symbols). The resonant contributions  to the cross section (dashed curves in Fig.~\ref{fig:sys_err} and Fig.~\ref{fig:res_cont}) were evaluated using the unitarized Breit-Wigner ansatz of the JM model, which includes all well established resonances in amplitude form. This estimation shows a sizable resonant contribution (see Fig.~\ref{fig:res_cont_w}) that indicates the possibility of reliable extraction of the resonance electrocouplings.
+The obtained cross sections are compared with the predictions of the JM model based TWOPEG event generator, which currently provides the best double-pion cross section estimation in the investigated kinematic region. The comparisons presented in Fig.~\ref{fig:sys_err} and Fig.~\ref{fig:res_cont} show reasonably good agreement between the TWOPEG estimations (solid curves) and the experimental cross sections (symbols). The resonant contributions  to the cross section (dashed curves in Fig.~\ref{fig:sys_err} and Fig.~\ref{fig:res_cont}) were evaluated using the unitarized Breit-Wigner ansatz of the JM model, which includes all well established resonances in amplitude form. This estimation shows a sizable resonant contribution (see Fig.~\ref{fig:res_cont_w}) that indicates the possibility of reliable extraction of the resonance electrocouplings.
 
 
 
@@ -1790,7 +1709,6 @@ Further detailed information about the kinematics of the reactions with three-pa
 
 \bibliography{e1e_paper}{}
 \bibliographystyle{apsrev4-1}
-%\include{appendix1}
 
 
 \end{document}
