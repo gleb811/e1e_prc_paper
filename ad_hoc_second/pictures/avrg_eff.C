@@ -95,8 +95,9 @@ Int_t sum_0 = 0;
 //Define input files
 
 
-TFile *file_data = new TFile("combine_small_bin_all_top.root","READ");
-
+//TFile *file_data = new TFile("combine_small_bin_all_top.root","READ");
+TFile *file_tmp_rec = new TFile("tmp_rec.root","READ");
+TFile *file_tmp_gen = new TFile("tmp_gen.root","READ");
 
 Float_t tmp_eff = 0.;
 Float_t num_of_cells = 0.;
@@ -107,12 +108,16 @@ Float_t sum_eff = 0.;
 
 
 
-
 for (i=get_min_w(Q2_bin); i<get_max_w(Q2_bin);i++) {
 
  W_bin[i] = 1.3125+0.025*i; 
 
-
+/*
+file_tmp->cd();
+qqq << "q2_" << Q2_bin << "/w_" << W_bin[i];
+file_tmp->mkdir(qqq.str().c_str());
+qqq.str("");
+*/
 //cout << i << "\n";
 
 TH1D *h_prj_crs;
@@ -122,16 +127,35 @@ TH1D *h_prj_crs;
 //read_data(file_data,i);
 
 
-file_data->cd();
+file_tmp_rec->cd();
 qqq << "q2_" << Q2_bin << "/w_" << W_bin[i] << "/h_5dim_pim_1_sim_1_q2_" << Q2_bin*1000 << "_w_" << 1000*W_bin[i];
 gDirectory->GetObject(qqq.str().c_str(),h_rec_1[i]);
 qqq.str("");
 
+/*
+file_tmp->cd();
+qqq << "q2_" << Q2_bin << "/w_" << W_bin[i];
+file_tmp->cd(qqq.str().c_str());
+qqq.str("");
+h_rec_1[i]->Write();
+file_data->cd();
+*/
+
 //cout << Q2_bin << " " << W_bin[i] << " " << " " << h_rec_1[i]->GetEntries() <<"\n";
 
+file_tmp_gen->cd();
 qqq << "q2_" << Q2_bin << "/w_" << W_bin[i] << "/h_5dim_1_sim_2_q2_" << Q2_bin*1000 << "_w_" << 1000*W_bin[i];
 gDirectory->GetObject(qqq.str().c_str(),h_gen_1[i]);
 qqq.str("");
+
+/*
+file_tmp->cd();
+qqq << "q2_" << Q2_bin << "/w_" << W_bin[i];
+file_tmp->cd(qqq.str().c_str());
+qqq.str("");
+h_gen_1[i]->Write();
+file_data->cd();
+*/
 
 //cout << Q2_bin << " " << W_bin[i] << " " << " " << h_gen_1[i]->GetEntries() <<"\n";
 
@@ -210,7 +234,8 @@ num_of_cells = num_of_cells + 1.;
 cout << sum_eff/num_of_cells <<"\n";
 
 //cout << "sum_pim = " << sum_pim << endl;
-
+file_tmp_gen->Close();
+file_tmp_rec->Close();
 
 }; //end of main program
 
